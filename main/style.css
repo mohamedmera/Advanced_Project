@@ -1,0 +1,54 @@
+.shadoe{
+    box-shadow: 5px 5px 10px 8px #88888888;
+}
+.card{
+    margin-top: 30px;
+}
+.navbar{
+    z-index: 1;
+}
+.btn-close{
+    background-color: white;
+    border: none;
+}
+.fack{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    display: none;
+}
+#btnaddPost{
+    color: white;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+#alertSuccess{
+    position: fixed;
+    z-index: 9999;
+    width: 30%;
+    bottom: 0;
+    right: 0;
+}
+#imgHeader{
+    width: 40px;
+    height: 40px;
+   
+}
+#b{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+#logoutdiv{
+    text-align: center;
+}
+.inclick{
+    cursor: pointer;
+}

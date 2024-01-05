@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="descripion" content="this"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../main/style.css">
+    <title> Mahalla Automation </title>
+    <link rel="icon" href="img-navbar.png">
+
+    <style>
+
+        .number-info{
+            color: rgb(127, 127, 127)
+        }
+        .number-info span{
+            color: black;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+  
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="col-10">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light shadoe" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../main/index.html">Mera</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../main/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="profileClk()">Profile</a>
+                        </li>
+                        </ul>
+                        <div class="d-flex w-100 justify-content-end">
+                            <label class="fack" id="fakePassword">*fack username</label>
+                            <label class="fack" id="usernameTaken">*username is taken</label>
+
+                            <button type="button" class="btn btn-outline-success mx-2" id="btnLoginNav" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
+                            <button class="btn btn-outline-success" id="btnRegNav" type="button" data-bs-toggle="modal" data-bs-target="#modalReg">Register</button>
+                            <div id="logoutdiv" style="display: none;" >
+                                <img src="Screenshot 2023-12-27 133328.png" alt="403" class="rounded-circle" id="imgHeader">
+
+                                <b id="b">@hamo</b>
+                                <button type="button" id="btnLogoutNav" class="btn btn-outline-danger"onclick="logOUt()">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    
+
+<div class="container">
+    <div class="d-flex justify-content-center mt-5">
+        <div class="col-10" id="mainCard">
+
+
+            <div class="card rounded shadoe">
+                <div class="card-body">
+                    <div class="row" id="main">
+
+                        <div class="col-2">
+
+                            <img src="img-header.jpeg" alt="404" id="header-image" style="width: 120px; height: 120px; border-radius: 200px;">
+                        
+                        </div>
+                    
+                        <div class="col-4 d-flex flex-column justify-content-evenly" style="font-weight: 700;">
+                            
+                            <div id="name">
+                                name
+                            </div>
+                            
+                            
+                            <div id="username">
+                                username
+                            </div>
+
+                            <div id="email">
+                                fjklsjf@klsdfj.com
+                            </div>
+
+
+
+                        </div>
+                    
+                        <div class="col-4 d-flex flex-column justify-content-evenly" style="font-weight: 700;">
+                             
+                            <div class="number-info">
+                                <span id="Num-Posts">13</span>
+                                Posts
+                            </div>
+
+                            <div class="number-info">
+                                <span id="Num-comments">20</span>
+                                Comments
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <h1 id="name-author">ljljlkj</h1>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="d-flex justify-content-center mt-1">
+        <div class="col-10" id="colectionCards">
+
+        <div class="card rounded shadoe">
+            <div class="card-header">
+                <img src="${author.profile_image}" alt="404" class="rounded-circle" style="width: 50px; height: 50px;">  
+                <b class="ml-2">@mera</b>
+                <h5 style="color: rgb(111, 111, 111);" class="mt-2"> 9 minute ago</h5>
+            </div>
+            <div class="card-body">
+                <img src="${post.image}" alt="404" class="w-100">
+                <h5 class="card-title">aha</h5>
+                <p class="card-text">
+                    ahan
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <hr>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                    </svg>
+                    <span>
+                        (3)Commrnts
+                        <span id="postTags">
+                            <button>Policy</button>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="ModalLabelforLogin" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabelforLogin">LogIn</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username-inputforLogin" class="col-form-label">Username:</label>
+              <input type="text" class="form-control" id="username-inputforLogin">
+            </div>
+            <div class="mb-3">
+              <label for="password-input" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="password-inputforLogin">
+              <input type="checkbox" id="checkboxforpasswordforLogin"> 
+              <label for="checkboxforpasswordforLogin">Show Password</label>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="btnLogin" onclick="loginBtnClecked()">LogIn</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="modalReg" tabindex="-1" aria-labelledby="ModalLabelforRegister" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="ModalLabelforRegister">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-2">
+              <label for="name-inputforReg" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="name-inputforReg">
+            </div>
+            <div class="mb-2">
+              <label for="username-inputforReg" class="col-form-label">Username:</label>
+              <input type="text" class="form-control" id="username-inputforReg">
+          </div>
+            <div class="mb-2">
+              <label for="password-inputforReg" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="password-inputforReg">
+              <input type="checkbox" id="checkboxforpasswordReg"> 
+              <label for="checkboxforpassword">Show Password</label>
+          </div>
+            <div class="mb-2">
+              <label for="image-inputforReg" class="col-form-label">Image:  </label>
+              <input type="file" class="form-control" id="image-inputforReg">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="btnReg" onclick="regBtnClecked() ">Register</button>
+        </div>
+      </form>
+    </div>
+      </div>
+    </div>
+  
+
+    <div class="modal fade" id="modalAddPost" tabindex="-1" aria-labelledby="ModalLabelforAddPost" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalLabelforAddPost">Add Post:</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="text-inputAddPost" class="col-form-label">Title:</label>
+                  <input type="text" class="form-control" id="text-inputAddPost">
+                  <input type="hidden" id="postId-input" value="">
+                </div>
+                <div class="mb-3">
+                  <label for="textarea-inputAddPost" class="col-form-label">Body:</label>
+                  <textarea class="form-control" id="textarea-inputAddPost" style="height: 100px;"></textarea>
+              </div>
+                <div class="mb-3">
+                  <label for="image-inputAddPost" class="col-form-label">Image:</label>
+                  <input type="file" class="form-control" id="image-inputAddPost">
+              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="btnAdd"  data-bs-dismiss="modal" onclick="AddPostBtnClecked()">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="modal fade" id="modalDelPost" tabindex="-1" aria-labelledby="ModalLabelforDelPost" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalLabelforDelPost">Are you sure to Delete this Post ?</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <input type="hidden" id="input-delete">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cencel</button>
+              <button type="button" class="btn btn-outline-danger" id="btnAdd"  data-bs-dismiss="modal" onclick="confirmDelbtnClk() ">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="loader" style="background-color: gray; position: fixed; top: 0; bottom: 0; right: 0; left: 0; margin: auto; width: 120px; height: 120px; display: flex; justify-content: center; align-items: center; z-index: 9999; border-radius: 10px;">
+        <div class="spinner-border" role="status" style="width: 4.5rem; height: 4.5rem; color: #fff;">
+        </div>
+      </div>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="profile.js"></script>
+
+    <!-- <script src="../main.js"></script> -->
+</body>
+</html>

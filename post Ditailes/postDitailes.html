@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="descripion" content="this"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../main/style.css">
+    <title> Mahalla Automation </title>
+    <link rel="icon" href="img-navbar.png">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="col-10">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light shadoe" >
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../main/index.html">Mera</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../main/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="profileClk()">Profile</a>
+                            </li>
+                            </ul>
+                            <div class="d-flex w-100 justify-content-end">
+                                <label class="fack" id="fakePassword">*fack username</label>
+                                <label class="fack" id="usernameTaken">*username is taken</label>
+    
+                                <button type="button" class="btn btn-outline-success mx-2" id="btnLoginNav" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
+                                <button class="btn btn-outline-success" id="btnRegNav" type="button" data-bs-toggle="modal" data-bs-target="#modalReg">Register</button>
+                                <div id="logoutdiv" style="display: none;" >
+                                    <img src="Screenshot 2023-12-27 133328.png" alt="403" class="rounded-circle" id="imgHeader">
+    
+                                    <b id="b">@hamo</b>
+                                    <button type="button" id="btnLogoutNav" class="btn btn-outline-danger"onclick="logOUt()">Logout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="height: 500px">
+        <div class="d-flex justify-content-center mt-5">
+        <div class="col-10">
+            <h1>
+                <span id="username-span">
+                    Mera's
+                </span>
+                post
+            </h1>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="col-10" id="colectionCards">
+                
+              <div class="card rounded shadoe">
+                <div class="card-header">
+                    <img src="" alt="404" class="rounded-circle" style="width: 50px; height: 50px;">  
+                    <b class="ml-2">@mera</b>
+                    <h5 style="color: rgb(111, 111, 111);" class="mt-2"> 9 minute ago</h5>
+                </div>
+                <div class="card-body">
+                    <img src="img-header.jpeg" alt="404" class="w-100">
+                    <h5 class="card-title">aha</h5>
+                    <p class="card-text">
+                        ahan
+                    </p>        
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <hr>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                        </svg>
+                        <span>
+                            (3)Comments
+                            <span>
+                                <button>Policy</button>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div style="background-color: rgb(187, 187, 187);" class="p-3">
+
+                    <div id="comment" class="mt-2">
+                        <img src="img-header.jpeg" alt="40" class="rounded-circle" style="width: 40px;">
+                        
+                        <b class="b-comment">@mera</b>
+                    </div>
+                    <div>
+                        <p class="p-comment">sdhfsdrfuhsdjkhdjfhdsjofdjksfhdlshfjkldshfjksdfhsdjklfhjksdfhsdjkhfjksdhjk</p>
+                    </div>
+
+                    <div id="comment" class="mt-2">
+                        <img src="img-header.jpeg" alt="40" class="rounded-circle" style="width: 40px;">
+                        
+                        <b class="b-comment">@mera</b>
+                    </div>
+                    <div>
+                        <p class="p-comment">sdhfsdrfuhsdjkhdjfhdsjofdjksfhdlshfjkldshfjksdfhsdjklfhjksdfhsdjkhfjksdhjk</p>
+                    </div>
+
+                    <div id="comment" class="mt-2">
+                        <img src="img-header.jpeg" alt="40" class="rounded-circle" style="width: 40px;">
+                        
+                        <b class="b-comment">@mera</b>
+                    </div>
+                    <div>
+                        <p class="p-comment">sdhfsdrfuhsdjkhdjfhdsjofdjksfhdlshfjkldshfjksdfhsdjklfhjksdfhsdjkhfjksdhjk</p>
+                    </div>
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control" placeholder="...add Comment" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="button-addon2">Add Commant</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="ModalLabelforLogin" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalLabelforLogin">LogIn</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="username-inputforLogin" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="username-inputforLogin">
+                </div>
+                <!-- <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" id="username-inputforLogin" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div> -->
+                <div class="mb-3">
+                  <label for="password-input" class="col-form-label">Password:</label>
+                  <input type="password" class="form-control" id="password-inputforLogin">
+                  <input type="checkbox" id="checkboxforpasswordforLogin"> 
+                  <label for="checkboxforpasswordforLogin">Show Password</label>
+              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="btnLogin" onclick="loginBtnClecked()">LogIn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="modal fade" id="modalReg" tabindex="-1" aria-labelledby="ModalLabelforRegister" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalLabelforRegister">Register</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-2">
+                  <label for="name-inputforReg" class="col-form-label">Name:</label>
+                  <input type="text" class="form-control" id="name-inputforReg">
+                </div>
+                <div class="mb-2">
+                  <label for="username-inputforReg" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="username-inputforReg">
+              </div>
+                <div class="mb-2">
+                  <label for="password-inputforReg" class="col-form-label">Password:</label>
+                  <input type="password" class="form-control" id="password-inputforReg">
+                  <input type="checkbox" id="checkboxforpasswordReg"> 
+                  <label for="checkboxforpassword">Show Password</label>
+              </div>
+                <div class="mb-2">
+                  <label for="image-inputforReg" class="col-form-label">Image:  </label>
+                  <input type="file" class="form-control" id="image-inputforReg">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="btnReg" onclick="regBtnClecked() ">Register</button>
+            </div>
+          </form>
+        </div>
+          </div>
+        </div>
+
+    <div class="container" style="height: 500px">
+        <div class="d-flex justify-content-center mt-5">
+            <div class="col-10" id="colectionCards">
+            </div>
+        </div>
+    </div>
+    <div id="alertSuccess" role="alert" class="fade show"></div>
+
+    <div id="loader" style="background-color: gray; position: fixed; top: 0; bottom: 0; right: 0; left: 0; margin: auto; width: 120px; height: 120px; display: flex; justify-content: center; align-items: center; z-index: 9999; border-radius: 10px;">
+        <div class="spinner-border" role="status" style="width: 4.5rem; height: 4.5rem; color: #fff;">
+        </div>
+      </div>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>>
+    <script src="../main.js"></script>
+    <script src="postDitailes.js"></script>
+
+</body>
+</html>
